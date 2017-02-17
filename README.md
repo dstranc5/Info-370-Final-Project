@@ -1,6 +1,7 @@
 # Info-370-Final-Project
 ## Project Description ##
 > The purpose of this research project is to find trends and patterns in Donald Trump's twitter data. We will analyze a dataset of over 7000 tweets from Donald Trump. We discovered the dataset while we were on Reddit looking at the subreddit r/datasets. The reddit post came from a website (www.crowdbabble.com). The article we read was written by Abbas Alidina and we are assuming that is who collected the data. Our target audience is anyone interested in politics or Donald Trump's personal tweets. My project will aim to answer the following three questions: 
+
 1. On average, do Trump's tweets tend to be positive or negative?
 2. What are Trump's most used words in his tweets?
 3. Have Trump’s twitter semantics change over time?
