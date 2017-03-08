@@ -9,3 +9,5 @@
 ## Technical Description ##
 > The final product will be a HTML page compiled using KnitR. The dataset includes over 7000 tweets so parsing through the tweets efficiently might be a challenge. We will need to learn how to perform semantic analysis. We will also have to learn how to perform clustering techniques and techniques to develop useful graphs. We are intending to use either Time Series analysis and/or Clustering. Time series will be useful because the tweets are in a linear order, so hopefully we will be able to see patterns in his twitter data throughout time. Clustering will be useful to see if there are any patterns, or clusters, of data. One major challenge we expect is determining how we can compare/contrast the data. This is also the largest dataset that we have worked with, so it might get overwhelming
  at times.
+
+Final Resource: https://dstranc5.github.io/Info-370-Final-Project/
