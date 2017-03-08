@@ -11760,7 +11760,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>My team and I are interested in President Donald Trump's tweets from the popular social media platform Twitter because they deliver the opinions and thoughts from this controversial political figure straight to the public. If you forget what he looks like, <a href="http://trumpdonald.org/">click here for a reminder</a>. From multiple sources, we were able to retrieve a large CSV file of his tweets from the early days of his 2016 presidential campaign all the way up to March 5th 2017. These are the question we plan on answering at the end:</p>
+<p>My team and I are interested in President Donald Trump's tweets from the popular social media platform Twitter because they deliver the opinions and thoughts from this controversial political figure straight to the public. If you forget what he looks like, <a href="http://trumpdonald.org/">click here for a reminder</a>. From multiple sources, we were able to retrieve a large CSV file of his tweets from the early days of his 2016 presidential campaign all the way up to March 5th, 2017. These are the question we plan on answering at the end:</p>
 
 <pre><code>1. On average, do Trump's tweets tend to be positive or negative?
 2. What are Trump's most used words in his tweets?
@@ -11780,7 +11780,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Set-up</span>
@@ -11803,7 +11803,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./data/Trump-Tweets.csv&#39;</span><span class="p">)</span>
@@ -11818,7 +11818,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[2]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -11853,7 +11853,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Gather and isolate all the tweets</span>
@@ -11893,7 +11893,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Join the original dataset and the sentiment and emotion counts</span>
@@ -11940,7 +11940,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
@@ -11954,7 +11954,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -11969,7 +11969,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
@@ -11983,7 +11983,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -12018,14 +12018,14 @@ dtype: object</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In the dataset, there are now 7375 Tweets dated from July 16th, 2015 to November 11th, 2016 and 18 columns. Below is a sample of what the dataset looks like now.</p>
+<p>In the dataset, there are now 8165 Tweets dated from July 16th, 2015 to March, 5th, 2017 and 17 columns. Below is a sample of what the dataset looks like now.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
@@ -12039,7 +12039,7 @@ dtype: object</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -12068,92 +12068,152 @@ dtype: object</pre>
   </thead>
   <tbody>
     <tr>
-      <th>5226</th>
-      <td>5237</td>
-      <td>16-05-07</td>
-      <td>I am going to keep our jobs in the US and tota...</td>
-      <td>19114</td>
-      <td>6576</td>
+      <th>8118</th>
+      <td>8129</td>
+      <td>17-02-22</td>
+      <td>One thing I will say about Rep Keith Ellison i...</td>
+      <td>80166</td>
+      <td>12264</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>neutral</td>
+    </tr>
+    <tr>
+      <th>3920</th>
+      <td>3929</td>
+      <td>16-02-02</td>
+      <td>All you haters need to realize Trump got the...</td>
+      <td>10422</td>
+      <td>3267</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>neutral</td>
+    </tr>
+    <tr>
+      <th>7338</th>
+      <td>7349</td>
+      <td>16-11-08</td>
+      <td>RT  Join my family in this incredible movement...</td>
+      <td>63868</td>
+      <td>19710</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>1.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>1.0</td>
+      <td>positive</td>
+    </tr>
+    <tr>
+      <th>6973</th>
+      <td>6984</td>
+      <td>16-10-16</td>
+      <td>A great day in New Hampshire and Maine Fantast...</td>
+      <td>24283</td>
+      <td>8424</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>neutral</td>
+    </tr>
+    <tr>
+      <th>4044</th>
+      <td>4053</td>
+      <td>16-02-10</td>
+      <td>Big speech tonight in South Carolina  700 PM T...</td>
+      <td>7296</td>
+      <td>1863</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>positive</td>
+    </tr>
+    <tr>
+      <th>4860</th>
+      <td>4871</td>
+      <td>16-03-29</td>
+      <td>We need to secure our borders ASAP No games we...</td>
+      <td>24483</td>
+      <td>9330</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>neutral</td>
+    </tr>
+    <tr>
+      <th>4375</th>
+      <td>4384</td>
+      <td>16-02-27</td>
+      <td>I will be on  at 830 AM Will be talking about ...</td>
+      <td>7625</td>
+      <td>1976</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>-1.0</td>
       <td>negative</td>
     </tr>
     <tr>
-      <th>4809</th>
-      <td>4820</td>
-      <td>16-03-24</td>
-      <td>NATO is obsolete and must be changed to additi...</td>
-      <td>15376</td>
-      <td>4949</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>neutral</td>
-    </tr>
-    <tr>
-      <th>2946</th>
-      <td>2950</td>
-      <td>15-12-06</td>
-      <td>Trump is not controlled by donorsspecial int...</td>
-      <td>2422</td>
-      <td>831</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>positive</td>
-    </tr>
-    <tr>
-      <th>2450</th>
-      <td>2453</td>
-      <td>15-11-10</td>
-      <td>OuTsTaNdInG Is obvious that Jr has much of ...</td>
-      <td>1182</td>
-      <td>459</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>1.0</td>
-      <td>3.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>2.0</td>
-      <td>positive</td>
-    </tr>
-    <tr>
-      <th>7937</th>
-      <td>7948</td>
-      <td>17-01-20</td>
-      <td>Today we are not merely transferring power fro...</td>
-      <td>111258</td>
-      <td>20552</td>
+      <th>1585</th>
+      <td>1586</td>
+      <td>15-10-08</td>
+      <td>Thank you</td>
+      <td>1591</td>
+      <td>1077</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -12168,94 +12228,32 @@ dtype: object</pre>
       <td>neutral</td>
     </tr>
     <tr>
-      <th>2673</th>
-      <td>2676</td>
-      <td>15-11-21</td>
-      <td>When you become president we will avenge all...</td>
-      <td>2304</td>
-      <td>718</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
+      <th>4861</th>
+      <td>4872</td>
+      <td>16-03-29</td>
+      <td>Lyin Ted I have already beaten you in all deba...</td>
+      <td>0</td>
+      <td>3031</td>
       <td>1.0</td>
-      <td>0.0</td>
       <td>0.0</td>
       <td>1.0</td>
       <td>1.0</td>
-      <td>positive</td>
-    </tr>
-    <tr>
-      <th>695</th>
-      <td>696</td>
-      <td>15-08-07</td>
-      <td>I really enjoyed the debate tonight even thoug...</td>
-      <td>9651</td>
-      <td>4042</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>3.0</td>
       <td>0.0</td>
       <td>1.0</td>
       <td>2.0</td>
-      <td>3.0</td>
-      <td>positive</td>
-    </tr>
-    <tr>
-      <th>1867</th>
-      <td>1868</td>
-      <td>15-10-18</td>
-      <td>Just reported by CNN that the Trump halo effec...</td>
-      <td>2550</td>
-      <td>1011</td>
       <td>1.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
       <td>1.0</td>
       <td>positive</td>
     </tr>
     <tr>
-      <th>6086</th>
-      <td>6097</td>
-      <td>16-07-29</td>
-      <td>In Hillary Clintons America  things get worse ...</td>
-      <td>26662</td>
-      <td>12781</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>-1.0</td>
-      <td>negative</td>
-    </tr>
-    <tr>
-      <th>1691</th>
-      <td>1692</td>
-      <td>15-10-13</td>
-      <td>You Cant Stump the Trump</td>
-      <td>6406</td>
-      <td>6057</td>
-      <td>0.0</td>
-      <td>0.0</td>
+      <th>7294</th>
+      <td>7305</td>
+      <td>16-11-04</td>
+      <td>Join me live in Hershey Pennsylvania #MakeAmer...</td>
+      <td>19709</td>
+      <td>6722</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -12265,7 +12263,9 @@ dtype: object</pre>
       <td>1.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>neutral</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>positive</td>
     </tr>
   </tbody>
 </table>
@@ -12339,7 +12339,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Histogram of emotions</span>
@@ -12826,7 +12826,7 @@ EYkKAyoRERERiQoDKhERERGJyv8D0RdWfazWfCcAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;polarity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -12840,7 +12840,7 @@ EYkKAyoRERERiQoDKhERERGJyv8D0RdWfazWfCcAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[11]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -12873,7 +12873,7 @@ Name: polarity, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Favorites&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Retweets&#39;</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
@@ -15342,136 +15342,11 @@ K6WUUkop1Yn/D6r2Xrsjb/SVAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">positive_tweets</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;sentiment&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span><span class="s1">&#39;positive&#39;</span><span class="p">)</span>
 <span class="n">positive_tweets</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[11]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Tweet_Num</th>
-      <th>Date</th>
-      <th>Text</th>
-      <th>Favorites</th>
-      <th>Retweets</th>
-      <th>anger</th>
-      <th>anticipation</th>
-      <th>disgust</th>
-      <th>fear</th>
-      <th>joy</th>
-      <th>negative</th>
-      <th>positive</th>
-      <th>sadness</th>
-      <th>surprise</th>
-      <th>trust</th>
-      <th>polarity</th>
-      <th>sentiment</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>4525</th>
-      <td>4534</td>
-      <td>16-03-06</td>
-      <td>I will be interviewed on  this morning Enjoy</td>
-      <td>6605</td>
-      <td>1476</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>positive</td>
-    </tr>
-    <tr>
-      <th>3850</th>
-      <td>3859</td>
-      <td>16-01-28</td>
-      <td>Our ReTrumplican Trump support group of 9500...</td>
-      <td>4441</td>
-      <td>1338</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>positive</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">positive_tweets</span><span class="o">.</span><span class="n">shape</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[12]:</div>
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(3358, 17)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">negative_tweets</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;sentiment&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span><span class="s1">&#39;negative&#39;</span><span class="p">)</span>
-<span class="n">negative_tweets</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -15511,44 +15386,44 @@ K6WUUkop1Yn/D6r2Xrsjb/SVAAAAAElFTkSuQmCC
   </thead>
   <tbody>
     <tr>
-      <th>6060</th>
-      <td>6071</td>
-      <td>16-07-27</td>
-      <td>No matter what Bill Clinton says and no matter...</td>
-      <td>40786</td>
-      <td>10906</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
+      <th>2392</th>
+      <td>2395</td>
+      <td>15-11-08</td>
+      <td>was hilarious ty we so enjoyed it #TrumpTr...</td>
+      <td>1518</td>
+      <td>519</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>1.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>1.0</td>
       <td>0.0</td>
-      <td>-1.0</td>
-      <td>negative</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>positive</td>
     </tr>
     <tr>
-      <th>6977</th>
-      <td>6988</td>
-      <td>16-10-17</td>
-      <td>I will sign the first bill to repeal #Obamacar...</td>
-      <td>39756</td>
-      <td>14929</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
+      <th>6847</th>
+      <td>6858</td>
+      <td>16-10-10</td>
+      <td>RT pence Congrats to my running mate  on a big...</td>
+      <td>116910</td>
+      <td>42196</td>
       <td>0.0</td>
       <td>1.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>-1.0</td>
-      <td>negative</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>positive</td>
     </tr>
   </tbody>
 </table>
@@ -15566,7 +15441,7 @@ K6WUUkop1Yn/D6r2Xrsjb/SVAAAAAElFTkSuQmCC
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">negative_tweets</span><span class="o">.</span><span class="n">shape</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">positive_tweets</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
 </div>
@@ -15578,6 +15453,131 @@ K6WUUkop1Yn/D6r2Xrsjb/SVAAAAAElFTkSuQmCC
 
 
 <div class="output_area"><div class="prompt output_prompt">Out[14]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(3358, 17)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">negative_tweets</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;sentiment&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span><span class="s1">&#39;negative&#39;</span><span class="p">)</span>
+<span class="n">negative_tweets</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[15]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Tweet_Num</th>
+      <th>Date</th>
+      <th>Text</th>
+      <th>Favorites</th>
+      <th>Retweets</th>
+      <th>anger</th>
+      <th>anticipation</th>
+      <th>disgust</th>
+      <th>fear</th>
+      <th>joy</th>
+      <th>negative</th>
+      <th>positive</th>
+      <th>sadness</th>
+      <th>surprise</th>
+      <th>trust</th>
+      <th>polarity</th>
+      <th>sentiment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>588</th>
+      <td>589</td>
+      <td>15-08-03</td>
+      <td>The GOP TREETED Reagan the same way Until ...</td>
+      <td>1010</td>
+      <td>376</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>-1.0</td>
+      <td>negative</td>
+    </tr>
+    <tr>
+      <th>2237</th>
+      <td>2240</td>
+      <td>15-11-01</td>
+      <td>RMandela  And youre still a negative loser and...</td>
+      <td>2502</td>
+      <td>943</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>0.0</td>
+      <td>-1.0</td>
+      <td>negative</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">negative_tweets</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[16]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -15602,7 +15602,7 @@ K6WUUkop1Yn/D6r2Xrsjb/SVAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">positive_tweets</span><span class="p">[</span><span class="s1">&#39;Favorites&#39;</span><span class="p">],</span> <span class="n">positive_tweets</span><span class="p">[</span><span class="s1">&#39;Retweets&#39;</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
@@ -17185,7 +17185,7 @@ E2YiIiIiomYwYSYiIiIiasb/A7gGh9DkuGtgAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">negative_tweets</span><span class="p">[</span><span class="s1">&#39;Favorites&#39;</span><span class="p">],</span> <span class="n">negative_tweets</span><span class="p">[</span><span class="s1">&#39;Retweets&#39;</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
@@ -18467,7 +18467,7 @@ ERERkRIUmEVERERESlBgFhEREREpQYFZRERERKSEvwFDkIPAbidBNQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
@@ -18481,7 +18481,7 @@ ERERkRIUmEVERERESlBgFhEREREpQYFZRERERKSEvwFDkIPAbidBNQAAAABJRU5ErkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[17]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[19]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -18757,7 +18757,7 @@ ERERkRIUmEVERERESlBgFhEREREpQYFZRERERKSEvwFDkIPAbidBNQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span> <span class="n">square</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -19483,19 +19483,6 @@ AElFTkSuQmCC
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
 </div>
     </div>
   </div>
